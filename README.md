@@ -11,78 +11,40 @@
 <br>
 
 <!-- NAME / TAGLINE - animated typing -->
-<a href="https://github.com/emmi-lili">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=Emmi+-+Blockchain+Engineer+%26+Tech+Lead;Architecture+of+Wallets+/+Rust+/+Digital+Assets+Infra;Building+here+since+Forever" alt="typing banner">
+<a href="https://github.com/mlmtradesolutionsac-debug">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=Desarrollador+y+Especialista+en+Automatizacion;Python+/+Flask+/+Bots+de+Trading;Optimizando+sistemas+desde+Lima,+Peru" alt="typing banner">
 </a>
 
 <br>
 
-<!-- SOCIALS — LinkedIn stays brand blue (glyph vanishes on custom fills). Others themed. -->
-<a href="https://www.linkedin.com/in/emmi-aguilar-rivero/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
-<a href="https://instagram.com/emmcriptada"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=aa9bef" alt="Instagram"></a>&nbsp;&nbsp;
-<a href="https://x.com/emmcriptada"><img src="https://img.shields.io/badge/X-0d1117?style=for-the-badge&logo=x&logoColor=aa9bef" alt="X"></a>
+<!-- SOCIALS — Puedes agregar tu enlace real de LinkedIn donde dice TU_URL_DE_LINKEDIN -->
+<a href="TU_URL_DE_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=emmi-lili&style=flat&color=aa9bef&label=profile+views" alt="profile views">
+<!-- VIEWS COUNTER -->
+<img src="https://komarev.com/ghpvc/?username=mlmtradesolutionsac-debug&style=flat&color=aa9bef&label=visitas+al+perfil" alt="profile views">
 
 </div>
 
 ---
 
+## ¡Hola! 👋
 
-## This is me :)
+Soy un desarrollador radicado en Perú 🇵🇪 enfocado en crear herramientas que solucionan problemas complejos, automatización financiera y arquitecturas escalables.
 
-Hi, I'm **Emmi**, blockchain engineer and tech lead, broadcasting from Bolivia 🇧🇴.
-I build the infrastructure that moves digital assets, and I'm a little obsessed with
-making sure regular people can use it without being afraid of it.
+- 🏛️ **Desarrollo Web:** Creador de plataformas administrativas para control patrimonial gestionando más de 12,000 activos en el sector público usando **Python, Flask, SQLAlchemy y Pandas**.
+- 📈 **Trading Algorítmico:** Configuración, testing en Strategy Tester y despliegue de bots de trading (EAs) para **MetaTrader 5** enfocados en el mercado del Oro (GOLD), integrando webhooks y Pine Script.
+- 🤖 **IA & Herramientas:** Uso avanzado de asistentes de código (Gemini CLI, Claude Code, opencode) para acelerar el desarrollo.
+- ⚙️ **Infraestructura:** Despliegues continuos evaluando servidores Linux dedicados, VPS y agentes launchd en macOS.
 
-- 🏦 **Technical Account Manager at [BitGo](https://www.bitgo.com)**: bridging the real world and crypto through institutional digital asset custody, wallets, and signing infrastructure.
-- ⭐ **Stellar Ambassador's program Country Lead** - Building the next amazing generation of DEVELOPERS. 
-- 🤖 Unapologetically obsessed with **AI and agents**. Mix that with blockchain and you get the perfect recipe, agents that can hold, move and verify value on their own.
-- 🎙️ Currently building my personal brand, **[@emmcriptada](https://instagram.com/emmcriptada)**: AI & Web3 explained in plain Spanish for people who never thought tech was for them.
-- 🌱 **My mission:** help people who want to become great and actually get there, through community, mentorship and shipping real things. 
-- 💬 Talk to me about **Web3 in LATAM** and you'll have my full attention.
 <br>
 
 <div align="center">
 
-## my perfect stack`
+## Stack Principal
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,solidity,rust,python,postgres,tailwind,git,github,docker,vscode&perline=7" alt="tech stack">
-
-</div>
-
----
-
-<div align="center">
-
-## signals 
-
-<table>
-<tr>
-<td width="50%" align="center" valign="middle">
-
-<!-- Self-rated radar - edit assets/skills.json, the workflow redraws it -->
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
-  <img src="assets/radar-dark.svg" width="400" alt="skill radar chart">
-</picture>
-
-</td>
-<td width="50%" align="center" valign="middle">
-
-<!-- Hand-authored contract & language stack radar - edit assets/langmix.json -->
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-langs-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-  <img src="assets/radar-langs-dark.svg" width="400" alt="language radar chart">
-</picture>
-
-</td>
-</tr>
-</table>
+<img src="https://skillicons.dev/icons?i=python,flask,html,js,git,github,linux,apple,vscode&perline=9" alt="tech stack">
 
 </div>
 
@@ -90,11 +52,9 @@ making sure regular people can use it without being afraid of it.
 
 <div align="center">
 
-## Numbers matter? ohhh yes. 
+## Estadísticas 
 
-<!-- Generated by scripts/cards.py into this repo. Deliberately NOT
-     github-readme-stats / streak-stats / github-profile-trophy: those are
-     shared public instances that go down and take the whole section with them. -->
+<!-- Generated by scripts/cards.py into this repo. -->
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/card-stats-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
@@ -104,13 +64,5 @@ making sure regular people can use it without being afraid of it.
 <br>
 
 <img src="assets/metrics.languages.svg" height="165" alt="most used languages">
-
-</div>
-
----
-
-<div align="center">
-
-<sub>` Build with love· @emmcriptada `</sub>
 
 </div>
