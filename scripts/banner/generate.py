@@ -32,7 +32,7 @@ SEED = 314159
 ROWS = [
     ("Subject", "Miguel López"),
     ("Role", "Systems & Trading Bot Engineer"),
-    ("Origin", "Callao · Lima, Perú"),
+    ("Origin", "San Miguel · Lima, Perú"),
     ("Education", "Admin. TI · Sistemas e Informática"),
     ("Status", "Building Trading Bots & Backends"),
     ("ToolChain", "MetaTrader 5 · VS Code · Git"),
