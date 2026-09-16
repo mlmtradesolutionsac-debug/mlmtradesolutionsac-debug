@@ -18,7 +18,7 @@ from scipy.spatial.distance import cdist
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = ROOT / "assets/source/mrr.png"
+SOURCE = ROOT / "assets/source/avatar.png"
 ASSETS = ROOT / "assets"
 LOGOS = Path(__file__).resolve().parent / "logos"
 DATA = Path(__file__).resolve().parent / "data"
@@ -30,21 +30,21 @@ TRAVELLER_COUNT = 900
 SEED = 314159
 
 ROWS = [
-    ("Subject", "Emmi"),
-    ("Role", "Blockchain Engineer · Tech Lead"),
-    ("Origin", "Bolivia"),
-    ("Education", "Community · LATAM"),
-    ("Status", "Building + Learning + Shipping"),
-    ("ToolChain", "Sublime · Cursor · Git"),
-    ("Core.Lang", "TypeScript · Rust · Solidity"),
-    ("Core.Frontend", "React · Next.js · Three.js · Tailwind"),
-    ("Core.Backend", "Node · Python"),
-    ("Core.Database", "Postgres · Supabase"),
-    ("Core.Infra", "Vercel · Docker · AWS"),
-    ("Grid.Mail", "—"),
-    ("Grid.LinkedIn", "/in/emmi-aguilar-rivero"),
-    ("Grid.GitHub", "emmi-lili"),
-    ("Grid.X", "@emmcriptada"),
+    ("Subject", "Miguel López"),
+    ("Role", "Systems & Trading Bot Engineer"),
+    ("Origin", "Callao · Lima, Perú"),
+    ("Education", "Sistemas e Informática · Perú"),
+    ("Status", "Building Trading Bots & Backends"),
+    ("ToolChain", "MetaTrader 5 · VS Code · Git"),
+    ("Core.Lang", "Python · MQL5 · SQL · TypeScript"),
+    ("Core.Backend", "Flask · Pandas · NumPy · FastAPI"),
+    ("Core.Database", "PostgreSQL · MySQL · SQLite"),
+    ("Core.Infra", "Docker · Linux · AWS"),
+    ("PublicSector", "Distrito Fiscal del Callao"),
+    ("Grid.Mail", "mlmtradesolutionsac@gmail.com"),
+    ("Grid.LinkedIn", "/in/miguel-lopez"),
+    ("Grid.GitHub", "mlmtradesolutionsac-debug"),
+    ("Grid.X", "—"),
 ]
 
 THEMES = {
@@ -158,8 +158,8 @@ def floyd_steinberg(gray: np.ndarray) -> np.ndarray:
 def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     """Return sampled x/y banner coordinates from a 300x340 dither grid."""
     source = Image.open(SOURCE).convert("RGBA")
-    # Tighter head + shoulders crop so face detail fills the VISUAL.MAP frame.
-    crop = source.crop((18, 28, 390, 450)).resize((300, 340), Image.Resampling.LANCZOS)
+    # Resize head + shoulders avatar to 300x340 dither grid
+    crop = source.resize((300, 340), Image.Resampling.LANCZOS)
     rgb = crop.convert("RGB")
     alpha = np.asarray(crop.getchannel("A"), dtype=np.float32) / 255.0
 
@@ -184,8 +184,7 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     prepared = prepared.filter(ImageFilter.UnsharpMask(radius=2, percent=175, threshold=1))
     bits = floyd_steinberg(np.asarray(prepared))
     active = bits if select_lit else ~bits
-    if theme == "dark":
-        active &= alpha > 0.08
+    active &= alpha > 0.08
 
     # Keep the full 300×340 lattice — skipping 2×2 cells was the soft/blurry look.
     ys, xs = np.where(active)
@@ -282,9 +281,9 @@ def render_svg(
         '<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-labelledby="title desc">',
-        "<title id=\"title\">Emmi's live system profile</title>",
+        "<title id=\"title\">Miguel's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
-        "Rust, code, and Stellar silhouettes.</desc>",
+        "tech silhouettes.</desc>",
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
@@ -391,17 +390,17 @@ def render_svg(
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" '
             'font-weight="700" letter-spacing="1.2">SYSTEM.INFO</text>',
             # LIVE badge and handle pill.
-            '<g filter="url(#glow)"><circle cx="915" cy="106" r="4" fill="#FF4D5A">'
+            '<g filter="url(#glow)"><circle cx="835" cy="106" r="4" fill="#FF4D5A">'
             '<animate attributeName="opacity" values="1;.3;1" dur="1.6s" repeatCount="indefinite"/>'
             '</circle></g>',
-            '<text x="927" y="111" fill="#FF4D5A" '
+            '<text x="847" y="111" fill="#FF4D5A" '
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" '
             'font-weight="700">LIVE</text>',
-            f'<rect x="982" y="94" width="146" height="24" rx="12" fill="{t["chrome"]}" opacity=".16" '
+            f'<rect x="888" y="94" width="240" height="24" rx="12" fill="{t["chrome"]}" opacity=".16" '
             f'stroke="{t["chrome"]}"/>',
-            f'<text x="1055" y="111" text-anchor="middle" fill="{t["chrome"]}" '
-            'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" '
-            'font-weight="700">@emmi-lili</text>',
+            f'<text x="1008" y="111" text-anchor="middle" fill="{t["chrome"]}" '
+            'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" '
+            'font-weight="700">@mlmtradesolutionsac-debug</text>',
         ]
     )
 
@@ -435,7 +434,7 @@ def render_svg(
             "● ALL SYSTEMS NOMINAL</text>",
             f'<text x="1128" y="548" text-anchor="end" fill="{t["muted"]}" '
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">'
-            "UTC-4 · LATAM NODE</text>",
+            "UTC-5 · LIMA NODE</text>",
             "</svg>",
         ]
     )
