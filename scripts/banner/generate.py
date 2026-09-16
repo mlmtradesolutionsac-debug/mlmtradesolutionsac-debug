@@ -33,14 +33,13 @@ ROWS = [
     ("Subject", "Miguel López"),
     ("Role", "Systems & Trading Bot Engineer"),
     ("Origin", "Callao · Lima, Perú"),
-    ("Education", "Sistemas e Informática · Perú"),
+    ("Education", "Admin. TI · Sistemas e Informática"),
     ("Status", "Building Trading Bots & Backends"),
     ("ToolChain", "MetaTrader 5 · VS Code · Git"),
     ("Core.Lang", "Python · MQL5 · SQL · TypeScript"),
     ("Core.Backend", "Flask · Pandas · NumPy · FastAPI"),
     ("Core.Database", "PostgreSQL · MySQL · SQLite"),
     ("Core.Infra", "Docker · Linux · AWS"),
-    ("PublicSector", "Distrito Fiscal del Callao"),
     ("Grid.Mail", "mlmtradesolutionsac@gmail.com"),
     ("Grid.LinkedIn", "/in/miguel-lopez"),
     ("Grid.GitHub", "mlmtradesolutionsac-debug"),
@@ -406,6 +405,7 @@ def render_svg(
 
     value_right = 1127.0
     row_y = 153.0
+    row_step = (475.0 - 153.0) / (len(ROWS) - 1) if len(ROWS) > 1 else 23.0
     for label, value in ROWS:
         value_len = text_width(value, 14)
         label_len = text_width(label, 14)
@@ -424,7 +424,7 @@ def render_svg(
                 f"{html.escape(value)}</text>",
             ]
         )
-        row_y += 23
+        row_y += row_step
 
     parts.extend(
         [
